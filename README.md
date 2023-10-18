@@ -1,6 +1,6 @@
-# Project Name
+# Pybind11 template project.
 
-Pybind11 template project.
+Now include a simple example of using pybind11 to wrap some c++ functions and a c++ class.
 
 ## Usage
 
@@ -18,4 +18,6 @@ cmake, python3, pybind11
 
 ### Running tests
 
-simply run `pytest` in the root folder.
+add library path to PYTHONPATH, in the root folder,
+run `export PYTHONPATH=$PYTHONPATH:$(pwd)/build/src`, 
+Then, run `pytest`.
