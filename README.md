@@ -10,14 +10,20 @@ cmake, python3, pybind11
 
 ### Building
 
+0. Install pybind11: `pip install pybind11`
 1. Clone the repository.
-2. Modify CMakeLists.txt file in the root folder, set pybind11Config.cmake path to your own: `set(CMAKE_PREFIX_PATH "/miniconda3/envs/pybind/lib/python3.11/site-packages/pybind11/share/cmake/pybind11")`
 2. Create a build directory: `mkdir build && cd build`
 3. Generate the build files using CMake: `cmake ..`
 4. Build the project: `make`
+5. Install the project: `make install`
 
 ### Running tests
 
-add library path to PYTHONPATH, in the root folder,
-run `export PYTHONPATH=$PYTHONPATH:$(pwd)/build/src`, 
-Then, run `pytest`.
+run `pytest` in the root directory.
+
+## todo
+
+1. generate pyi
+2. use stl
+3. use numpy
+4. dict, set, tuple, list
